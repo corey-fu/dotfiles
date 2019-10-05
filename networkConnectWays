@@ -1,0 +1,40 @@
+
+
+## To see list of saved connections, use (<SavedWiFiConn>)
+
+$ nmcli c
+
+## To see list of available WiFi hotspots (<WiFiSSID>)
+
+$ nmcli d wifi list
+
+or 
+
+$ sudo iwlist wlan0 scanning
+
+## To see list of interfaces (<WifiInterface>)
+
+$ ifconfig -a
+
+====================================================
+
+## To connect one of list of wifis
+
+$ nmcli d connect (<WifiInterface>)
+
+or
+
+$ nmcli c up <SaveWiFiConn>
+
+## To disconnect one of list of wifis
+
+$ nmcli d disconnect (<WifiInterface>)
+
+or
+
+$ nmcli c down <SaveWiFiConn>
+
+
+## GUI interface 
+
+$ nmtui
