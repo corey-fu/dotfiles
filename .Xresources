@@ -1,0 +1,117 @@
+! Include files
+!#include ".Xresources.d/xterm"
+!#include ".Xresources.d/rxvt-unicode"
+!#include ".Xresources.d/fonts"
+!#include ".Xresources.d/xscreensaver"
+
+! HiDPI Settings
+#define DPI 128 
+!Xft.dpi: 164
+!Xft.dpi: DPI 
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+! Input Method
+URxvt.InputMethod: gcin
+
+! Font Settings
+
+! URxvt.font: xft:Droid\ Sans\ Mono\ For\ Powerline:size=14,xft:WenQuanYi Micro Hei Mono:regular:size=14:minspace=true,xft:FontAwesome,xft:PowerlineSymbols
+URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12,xft:WenQuanYi Micro Hei Mono:regular:size=12,xft:FontAwesome,xft:PowerlineSymbols,xft:Noto Color Emoji,xft:Symbola
+! URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12,xft:AR PL Uming TW:style=book:size=12,xft:FontAwesome,xft:PowerlineSymbols,xft:Noto Color Emoji,xft:Symbola
+
+! Background Settings
+URxvt.letterSpace: 0
+URxvt.depth: 32
+URxvt.background: rgba:0000/0000/0200/c800
+URxvt.shading: 20
+!URxvt.termName: screen-256color
+
+URxvt.termName:rxvt-unicode-256color
+
+! Set the window size
+!URxvt.geometry: 80x25
+
+URxvt.loginShell: true
+
+! turn compile xft on
+! copy from arch wiki,may increase performance
+URxvt.buffered: true
+
+! set clickable URLs
+URxvt.perl-ext: default.matcher
+URxvt.urlLauncher: /usr/bin/chromium
+URxvt.matcher.button: 1
+
+! Use shift+pageup/down to scroll in screen
+URxvt.scrollBar: False
+URxvt.scrollstyle: next
+URxvt.secondaryScroll: True
+! Add simple tab function to urxvt
+URxvt.perl-ext-common: tabbed
+URxvt.tabbed.tabbar-fg: 14
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 10
+URxvt.tabbed.tab-bg: 8
+
+! Rofi options
+rofi.combi-modi:    window,drun,ssh
+rofi.theme:         solarized
+rofi.font:          hack 10
+rofi.modi:          combi
+
+
+!TomorrowNightEighties
+#define t_background       	#2d2d2d
+#define t_current_line     	#393939
+#define t_selection      	#515151
+#define t_foreground      	#cccccc
+#define t_comment	     	#999999
+#define t_red		     	#f2777a
+#define t_orange	     	#f99157
+#define t_yellow        	#ffcc66
+#define t_green	        	#99cc99
+#define t_aqua	        	#66cccc
+#define t_blue	        	#6699cc
+#define t_purple        	#cc99cc
+
+
+*.foreground:   t_foreground
+*.background:   t_background
+*.cursorColor:  #aeafad
+
+! Black / Grey
+*.color0:       #000000
+*.color8:       #666666
+
+! Red / Bright Red
+*.color1:       t_red
+*.color9:       #FF3334
+
+! Green + Bright Green
+*.color2:       t_green
+*.color10:      #9ec400
+
+! Yellow (Orange) + Bright Yellow (Yellow)
+*.color3:       t_orange
+*.color11:      t_yellow
+
+! Blue + Bright Blue
+*.color4:       t_blue
+*.color12:      t_blue
+
+! Magenta (Purple) + Bright Magenta
+*.color5:       t_purple
+*.color13:      #b777e0
+
+! Cyan (Aqua) + Bright Cyan
+*.color6:       t_aqua
+*.color14:      #54ced6
+
+! Light Grey (Selection) + White (Current Line)
+*.color7:       t_selection
+*.color15:      t_current_line
