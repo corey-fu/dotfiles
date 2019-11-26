@@ -1,5 +1,6 @@
-# This is a script for autoinstalling packages on my T480s
-# Version 0.5
+# This is a script for autoinstalling packages on PC
+# Works for Debian 10 (Buster)
+# Version 1.0
 
 ####################
 #		   #
@@ -39,7 +40,6 @@ apt install -y \
 	tlp \
 	xorg \
 	xinit \
-	xserver-xorg-video-intel \
 	git \
 	sudo \
 	ssh \
@@ -51,7 +51,6 @@ apt install -y \
 	powerline \
 	rxvt-unicode \
 	vim \
-	wpasupplicant \
 	numlockx \
 	rsync \
 	libappindicator3-1 \
