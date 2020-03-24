@@ -1,5 +1,11 @@
 # This is a script for autoinstalling packages on my T480s
-# Version 0.5
+# Version 0.6
+
+# ChangeLogs 
+# 0.5 - Create it
+# 0.6 - Add packages : thunderbolt-tools,xbacklight,feh
+#	Remove packages : thunderbird	
+#	Add new section : Powerline Fonts
 
 ####################
 #		   #
@@ -17,8 +23,7 @@ apt update && upgrade -y
 
 apt install -y \
 	intel-microcode \
-	firmware-iwlwifi \
-	thunderbird 
+	thunderbolt-tools
 
 ####################
 #		   #
@@ -42,6 +47,7 @@ apt install -y \
 	xorg \
 	xinit \
 	xserver-xorg-video-intel \
+	xbacklight \
 	git \
 	sudo \
 	ssh \
@@ -102,7 +108,8 @@ apt install -y \
 	icewm \
 	hsetroot \
 	gimp \
-        screengrab
+        screengrab \
+	feh
 
 ####################
 #		   #
@@ -136,3 +143,14 @@ apt install -y \
 	evince \
 	geeqie \
 	telegram-desktop 
+
+
+#######################
+#		      #
+#   Powerline fonts   #
+#                     #
+#######################
+
+cd $HOME
+git clone https://github.com/powerline/fonts
+sh fonts/install.sh
