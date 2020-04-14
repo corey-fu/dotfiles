@@ -6,6 +6,7 @@
 # 0.6 - Add packages : thunderbolt-tools,xbacklight,feh
 #	Remove packages : thunderbird	
 #	Add new section : Powerline Fonts
+# 0.7 - Add packages : pulseaudio,audacious
 
 ####################
 #		   #
@@ -54,6 +55,7 @@ apt install -y \
 	net-tools \
 	network-manager \
 	alsa-utils \
+	pulseaudio \
 	icewm \
 	gcin \
 	gcin-anthy \
@@ -131,7 +133,8 @@ apt install -y \
 apt install -y \
 	mpv \
 	vlc \
-	ffmpeg 
+	ffmpeg \
+        audacious
 
 ####################
 #		   #
