@@ -5,9 +5,9 @@
 !#include ".Xresources.d/xscreensaver"
 
 ! HiDPI Settings
-#define DPI 128 
+#define DPI 164 
 !Xft.dpi: 164
-!Xft.dpi: DPI 
+Xft.dpi: DPI 
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull
@@ -28,8 +28,10 @@ URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12,xft:WenQuanYi Micro Hei M
 URxvt.letterSpace: 0
 URxvt.depth: 32
 URxvt.background: rgba:0000/0000/0200/c800
-URxvt.shading: 20
-!URxvt.termName: screen-256color
+URxvt.transparent: true
+URxvt.shading: 50
+! Included this so you know how to make your foreground not match the color of your background
+URxvt.foreground: #eeeeee
 
 URxvt.termName:rxvt-unicode-256color
 
@@ -43,8 +45,8 @@ URxvt.loginShell: true
 URxvt.buffered: true
 
 ! set clickable URLs
-URxvt.perl-ext: default.matcher
-URxvt.urlLauncher: /usr/bin/chromium
+URxvt.perl-ext: default,matcher
+URxvt.urlLauncher: /usr/bin/google-chrome
 URxvt.matcher.button: 1
 
 ! Use shift+pageup/down to scroll in screen
