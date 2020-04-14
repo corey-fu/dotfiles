@@ -13,10 +13,10 @@ export LC_ALL="zh_TW.UTF-8"
 export XMODIFIERS="@im=gcin"
 export GTK_IM_MODULE="gcin"
 export QT_IM_MODULE="gcin"
-gcin &
+#gcin &
 
 # Setting background-image
-hsetroot -full "/home/coreyfu/wallpaper/lanmewko-11.png"
+#hsetroot -full "/home/coreyfu/wallpaper/lanmewko-11.png"
 #icewmbg &
 
 # Start a de or wm
