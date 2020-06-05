@@ -6,7 +6,7 @@
 # 0.6 - Add packages : thunderbolt-tools,xbacklight,feh
 #	Remove packages : thunderbird	
 #	Add new section : Powerline Fonts
-# 0.7 - Add packages : pulseaudio,audacious
+# 0.7 - Add packages : pulseaudio,audacious,openbox
 
 ####################
 #		   #
@@ -56,7 +56,6 @@ apt install -y \
 	network-manager \
 	alsa-utils \
 	pulseaudio \
-	icewm \
 	gcin \
 	gcin-anthy \
 	powerline \
@@ -108,6 +107,7 @@ sleep 5
 apt install -y \
 	i3 \
 	icewm \
+	openbox \
 	hsetroot \
 	gimp \
         screengrab \

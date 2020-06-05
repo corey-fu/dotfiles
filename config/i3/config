@@ -41,7 +41,7 @@ bindsym Mod1+Control+Shift+k focus parent, focus parent, focus parent, focus par
 
 # path environment
 
-set $script "$HOME/.script/funtions"
+set $script "$HOME/.script/functions"
 set $wallpaper "$HOME/wallpapers"
 set $lock "$HOME/.script/funtions/lock.sh"
 
@@ -49,8 +49,9 @@ set $lock "$HOME/.script/funtions/lock.sh"
 
 #exec --no-startup-id feh --randomize --bg-scale $wallpaper/*
 #exec --no-startup-id feh --bg-scale $wallpaper/taiwan-independence-1920x1080.png
-#exec --no-startup-id feh --bg-scale $wallpaper/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg
-exec --no-startup-id feh --bg-center $wallpaper/akira-wallpaper-k7oimxoqj9131.jpg
+exec --no-startup-id feh --bg-scale $wallpaper/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg
+#exec --no-startup-id feh --bg-center $wallpaper/akira-wallpaper-k7oimxoqj9131.jpg
+#exec --no-startup-id feh --bg-center $wallpaper/zentree.png
 
 # inputmethod
 
@@ -62,15 +63,15 @@ exec --no-startup-id gcin
 # you can change all by %s/Speaker/Master/g
 
 #bindsym XF86AudioMute exec amixer set Speaker toggle
-bindsym Ctrl+F1 exec amixer set Speaker toggle
+bindsym Ctrl+F1 exec amixer -D pulse set Master 1+ toggle 
 #F1
 
 #bindsym XF86AudioLowerVolume exec amixer sset Speaker 5%-
-bindsym Ctrl+F2 exec amixer sset Speaker 5%-
+bindsym Ctrl+F2 exec amixer sset Master 5%-
 #F2
 
 #bindsym XF86AudioRaiseVolume exec amixer sset Speaker 5%+
-bindsym Ctrl+F3 exec amixer sset Speaker 5%+
+bindsym Ctrl+F3 exec amixer sset Master 5%+
 #F3
 
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 10	
@@ -109,7 +110,8 @@ bindsym Mod1+d exec dmenu_run -fn "-xos4-terminus-medium-r-*-*-32-*"
 
 # solve the problem for browser dialog windows are too big 
 #floating_maximum_size 640 x 480 
-floating_maximum_size 1280 x 720 
+#floating_maximum_size 1280 x 720 
+floating_maximum_size 1920 x 1080
 
 # start rofi (a program launcher)
 #bindsym Mod1+d exec rofi -dmenu -dump-xresources
@@ -145,6 +147,8 @@ bindsym Mod1+Shift+Left move left
 bindsym Mod1+Shift+Down move down
 bindsym Mod1+Shift+Up move up
 bindsym Mod1+Shift+Right move right
+
+# change workspace next or prev with arrow keys
 
 # split in horizontal orientation
 bindsym Mod1+h split h

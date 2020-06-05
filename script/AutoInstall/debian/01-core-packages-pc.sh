@@ -47,7 +47,6 @@ apt install -y \
 	ssh \
 	net-tools \
 	alsa-utils \
-	icewm \
 	gcin \
 	gcin-anthy \
 	powerline \
@@ -58,9 +57,7 @@ apt install -y \
 	libappindicator3-1 \
 	g++ \
 	rofi \
-	ranger \
-	thunderbird 
-
+	ranger 
 
 echo "Take a break..."
 sleep 10
@@ -99,9 +96,11 @@ sleep 5
 apt install -y \
 	i3 \
 	icewm \
+	openbox \
 	hsetroot \
 	gimp \
-        screengrab
+        screengrab \
+	feh
 
 ####################
 #		   #
