@@ -43,7 +43,7 @@ bindsym Mod1+Control+Shift+k focus parent, focus parent, focus parent, focus par
 
 set $script "$HOME/.script/functions"
 set $wallpaper "$HOME/wallpapers"
-set $lock "$HOME/.script/funtions/lock.sh"
+set $lock "$HOME/.script/functions/lock.sh"
 
 # wallpaper settings
 

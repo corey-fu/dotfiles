@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 intern=eDP1
-extern=DP1
-#extern=HDMI2
+extern1=DP1
+extern2=HDMI2
+wallpaper=aerial-view-of-seashore-near-large-grey-rocks-853199.jpg
+
 
 ## to list all monitors , just type: ##
 
@@ -23,4 +25,11 @@ extern=DP1
 ## set two monitors but the only output is extern ##
 
 	#xrandr --output $intern --off --primary --output $extern --auto  
-	xrandr --output $intern --off --output $extern --auto --primary
+	#xrandr --output $intern --off --output $extern --auto --primary
+
+
+xrandr --output $intern --mode "2560x1440" \
+       	--output $extern1 --mode "3840x2160" --primary --right-of $intern \
+       	--output $extern2 --mode "1920x1200" --scale 1.5x1.5 --rotate left --right-of $intern
+
+feh --bg-center ~/wallpapers/$wallpaper 

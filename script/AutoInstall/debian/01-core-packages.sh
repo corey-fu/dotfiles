@@ -1,14 +1,23 @@
-# This is a script for autoinstalling packages on PC
+#!/bin/bash
+
+# This is a script for autoinstalling packages on the debian-based-system
 
 # ChangeLogs 
-# 0.5 - Create it
+# 0.5 - Created
 # 0.6 - Add packages : thunderbolt-tools,xbacklight,feh
-#	Remove packages : thunderbird	
-#     - Add packages : pulseaudio,audacious
-#	Add new section : LaTeX
+#	    Remove package : thunderbird	
+#	    Add new section : Powerline Fonts
+#       Add packages : pulseaudio,audacious
+#	    Add new section : LaTeX
+#       Change the purpose
+#       Remove the driver package for intel graphics
+#       Add some bluetooth utility
+#       Move alsa & pulseaudio packages to the A/V section
+#       Add package : thermald
+
 
 ####################
-#		   #
+#	        	   #
 #      Update	   #
 #                  #
 ####################
@@ -16,18 +25,19 @@
 apt update && upgrade -y
 
 ####################
-#		   #
+#		           #
 #      System	   #
 #                  #
 ####################
 
 apt install -y \
-#	intel-microcode 
-	udisks2 \
-	libblockdev-mdraid2
+    thermald
+
+#	intel-microcode \
+#	thunderbolt-tools
 
 ####################
-#		   #
+#		           #
 #     Terminal	   #
 #                  #
 ####################
@@ -36,7 +46,7 @@ apt install -y \
 	rxvt-unicode 
 
 ####################
-#		   #
+#	        	   #
 #     Utility	   #
 #                  #
 ####################
@@ -47,31 +57,48 @@ apt install -y \
 	tlp \
 	xorg \
 	xinit \
-	xserver-xorg-video-intel \
+	xbacklight \
 	git \
 	sudo \
 	ssh \
 	net-tools \
-	alsa-utils \
-	icewm \
+	network-manager \
 	gcin \
 	gcin-anthy \
 	powerline \
 	rxvt-unicode \
 	vim \
+	wpasupplicant \
 	numlockx \
 	rsync \
 	libappindicator3-1 \
 	g++ \
 	rofi \
-	ranger
+	ranger \
+    bluez-firmware \
+    blueman
 
+####################
+#		           #
+#       A/V	       #
+#                  #
+####################
+
+apt install -y \
+	alsa-utils \
+	pulseaudio \
+    pulseaudio-module-bluetooth \
+    pavucontrol \
+	mpv \
+	vlc \
+	ffmpeg \
+    audacious
 
 echo "Take a break..."
 sleep 10
 
 ####################
-#		   #
+#       		   #
 #      Fonts	   #
 #                  #
 ####################
@@ -96,21 +123,23 @@ echo "Take a break..."
 sleep 5
 
 ####################
-#		   #
+#	        	   #
 #     Graphic	   #
 #                  #
 ####################
 
 apt install -y \
+    openbox \
 	i3 \
 	icewm \
 	hsetroot \
 	gimp \
-        screengrab \
-	feh
+    screengrab \
+	feh \
+    scrot
 
 ####################
-#		   #
+#		           #
 #    WebBrowser	   #
 #                  #
 ####################
@@ -120,20 +149,9 @@ apt install -y \
 	chromium-driver \
 	chromium-l10n 
 
-####################
-#		   #
-#       A/V	   #
-#                  #
-####################
-
-apt install -y \
-	mpv \
-	vlc \
-	ffmpeg \
-	audacious
 
 ####################
-#		   #
+#		           #
 #      Extra	   #
 #                  #
 ####################
@@ -144,7 +162,17 @@ apt install -y \
 	telegram-desktop 
 
 #######################
-#		      #
+#		              #
+#   Powerline fonts   #
+#                     #
+#######################
+
+#cd $HOME
+#git clone https://github.com/powerline/fonts
+#sh fonts/install.sh
+
+#######################
+#		              # 
 #   	LaTeX         #
 #                     #
 #######################

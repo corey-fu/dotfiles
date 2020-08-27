@@ -1,12 +1,13 @@
 # This is a script for autoinstalling packages on my T480s
-# Version 0.6
 
 # ChangeLogs 
 # 0.5 - Create it
 # 0.6 - Add packages : thunderbolt-tools,xbacklight,feh
 #	Remove packages : thunderbird	
 #	Add new section : Powerline Fonts
-# 0.7 - Add packages : pulseaudio,audacious,openbox
+# 0.7 - Add packages : pulseaudio,audacious
+#	Add new section : LaTeX
+
 
 ####################
 #		   #
@@ -56,6 +57,7 @@ apt install -y \
 	network-manager \
 	alsa-utils \
 	pulseaudio \
+	icewm \
 	gcin \
 	gcin-anthy \
 	powerline \
@@ -107,7 +109,6 @@ sleep 5
 apt install -y \
 	i3 \
 	icewm \
-	openbox \
 	hsetroot \
 	gimp \
         screengrab \
@@ -147,13 +148,25 @@ apt install -y \
 	geeqie \
 	telegram-desktop 
 
-
 #######################
 #		      #
 #   Powerline fonts   #
 #                     #
 #######################
 
-cd $HOME
-git clone https://github.com/powerline/fonts
-sh fonts/install.sh
+#cd $HOME
+#git clone https://github.com/powerline/fonts
+#sh fonts/install.sh
+
+#######################
+#		      #
+#   	LaTeX         #
+#                     #
+#######################
+
+apt install texlive \
+	texlive-xetex \
+	texlive-lang-chinese \
+	texlive-bibtex-extra \
+	texlive-science \
+	latex-cjk-all

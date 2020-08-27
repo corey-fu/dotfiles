@@ -1,0 +1,4 @@
+## Cant type chinese with gcin
+
+切換輸入法框架為gcin
+im-config -n gcin

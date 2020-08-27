@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Velnias</name>
+    <name>Prismatic-Night</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -333,7 +333,7 @@
     </keybind>
     <keybind key="A-d">
       <action name="Execute">
-	<command>rofi-apps</command>
+        <command>rofi-apps</command>
       </action>
     </keybind>
     <keybind key="A-Return">
@@ -343,7 +343,32 @@
     </keybind>
     <keybind key="A-Shift-x">
       <action name="Execute">
-	<command>/home/coreyfu/.script/functions/lock.sh</command>
+        <command>/home/coreyfu/.script/functions/lock.sh</command>
+      </action>
+    </keybind>
+    <keybind key="A-F1">
+      <action name="Execute">
+        <command>bash /home/coreyfu/.script/functions/volume-control.sh toggle</command>
+      </action>
+    </keybind>
+    <keybind key="A-F2">
+      <action name="Execute">
+        <command>bash /home/coreyfu/.script/functions/volume-control.sh dec</command>
+      </action>
+    </keybind>
+    <keybind key="A-F3">
+      <action name="Execute">
+        <command>bash /home/coreyfu/.script/functions/volume-control.sh inc</command>
+      </action>
+    </keybind>
+    <keybind key="A-F5">
+      <action name="Execute">
+        <command>xbacklight -dec 5</command>
+      </action>
+    </keybind>
+    <keybind key="A-F6">
+      <action name="Execute">
+        <command>xbacklight -inc 5</command>
       </action>
     </keybind>
     <!-- Launch scrot when Print is pressed -->
