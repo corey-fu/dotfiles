@@ -1,0 +1,88 @@
+# System #
+thermald
+acpi
+tlp
+
+# Utility #
+aptitude
+xorg
+xinit
+xbacklight
+git
+sudo
+ssh
+powerline
+rxvt-unicode
+vim
+numlockx
+rsync
+g++
+rofi
+ranger
+
+# Network #
+net-tools
+network-manager
+bluez-firmware
+blueman
+wpasupplicant
+
+# IME #
+gcin
+gcin-anthy
+libappindicator3-1
+
+# A/V #
+alsa-utils
+pulseaudio
+pulseaudio-module-bluetooth
+pavucontrol
+mpv
+vlc
+ffmpeg
+audacious
+
+# Fonts #
+xfonts-intl-chinese
+xfonts-intl-chinese-big
+fonts-arphic-bkai00mp
+fonts-arphic-bsmi00lp
+fonts-arphic-gkai00mp
+fonts-arphic-ukai
+fonts-arphic-uming
+fonts-wqy-zenhei
+fonts-wqy-microhei
+fonts-powerline
+fonts-symbola
+unifont
+fonts-noto
+fonts-font-awesome
+
+# Window Manager #
+openbox
+i3
+icewm
+
+# Graphic #
+hsetroot
+feh
+gimp
+evince
+geeqie
+scrot
+
+# WebBrowser #
+chromium
+chromium-driver
+chromium-l10n 
+
+# Extra #
+telegram-desktop 
+
+# Latex #
+texlive
+texlive-xetex
+texlive-lang-chinese
+texlive-bibtex-extra
+texlive-science
+latex-cjk-all

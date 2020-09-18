@@ -177,7 +177,8 @@ apt install -y \
 #                     #
 #######################
 
-apt install texlive \
+apt install -y \
+    texlive \
 	texlive-xetex \
 	texlive-lang-chinese \
 	texlive-bibtex-extra \

@@ -1,0 +1,3 @@
+bolt
+intel-microcode
+xserver-xorg-video-intel
