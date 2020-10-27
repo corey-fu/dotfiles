@@ -227,22 +227,22 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-F1">
+    <keybind key="A-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-F2">
+    <keybind key="A-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-F3">
+    <keybind key="A-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-F4">
+    <keybind key="A-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
@@ -346,27 +346,27 @@
         <command>/home/coreyfu/.script/functions/lock.sh</command>
       </action>
     </keybind>
-    <keybind key="A-F1">
+    <keybind key="C-F1">
       <action name="Execute">
         <command>bash /home/coreyfu/.script/functions/volume-control.sh toggle</command>
       </action>
     </keybind>
-    <keybind key="A-F2">
+    <keybind key="C-F2">
       <action name="Execute">
         <command>bash /home/coreyfu/.script/functions/volume-control.sh dec</command>
       </action>
     </keybind>
-    <keybind key="A-F3">
+    <keybind key="C-F3">
       <action name="Execute">
         <command>bash /home/coreyfu/.script/functions/volume-control.sh inc</command>
       </action>
     </keybind>
-    <keybind key="A-F5">
+    <keybind key="C-F5">
       <action name="Execute">
         <command>xbacklight -dec 5</command>
       </action>
     </keybind>
-    <keybind key="A-F6">
+    <keybind key="C-F6">
       <action name="Execute">
         <command>xbacklight -inc 5</command>
       </action>

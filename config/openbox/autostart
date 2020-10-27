@@ -4,5 +4,11 @@
 dunst&
 # Launch tint2
 tint2 -c ~/.config/tint2/tint2rc &
+# Gcin
+#gcin&
 # Initiate Bluetooth GUI
 blueman-applet&
+# Start 'play-with-mpv' server
+play-with-mpv&
+# Instant Messenger
+telegram-desktop&

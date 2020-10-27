@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# Purpose: connect airpods quickly in GNU/Linux system
+
+# Inspired by Akhil Jalagam, Created by Corey Fu
+
+# Usage : airpods [OPTION]
+#                 connect | toggle | restart | disconnect
+
+
+# Help : https://wiki.archlinux.org/index.php/Bluetooth_headset#Pairing_works,_but_connecting_does_not
+# Make sure the user belongs to 'lg' group
+
+AIRPODS_MAC='14:C8:8B:CA:8F:F1' 
+AIRPODS_NAME='bluez_card.14:C8:8B:CA:8F:F1' # pactl list cards
+
+opt=$1
+
+case $opt in
+    connect)
+        bluetoothctl power on
+        bluetoothctl agent on
+        sleep 2
+        bluetoothctl connect $AIRPODS_MAC
+    ;;
+    toggle)
+        cur=`pactl list | grep -A 30 $AIRPODS_NAME | grep 'Active Profile:' | cut -d' ' -f3`
+        if [[ $cur == "a2dp_sink" ]]; then
+            pactl set-card-profile $AIRPODS_NAME headset_head_unit
+        else
+            pactl set-card-profile $AIRPODS_NAME a2dp_sink
+        fi
+    ;;
+    restart)
+        sudo systemctl restart bluetooth
+        systemctl --user restart pulseaudio.service
+        systemctl --user restart pulseaudio.socket
+    ;;
+    disconnect)
+        bluetoothctl disconnect $AIRPODS_MAC
+    ;;
+esac
+
+sleep 2
+cards=`pactl list cards short`
+#card_no=`pactl list cards short | grep bluez | awk '{print $1}'`
+
+echo "Audio devices avaliable: "
+echo " "
+echo "$cards"

@@ -1,0 +1,42 @@
+#!/bin/bash
+
+intern=eDP1
+extern1=DP1
+extern2=HDMI2
+wallpaper=aerial-view-of-seashore-near-large-grey-rocks-853199.jpg
+
+opt=$1
+intern=$2
+extern1=$3
+extern2=$4
+direction=$5
+
+case $opt in
+    triple-rotate)
+        xrandr --output $intern --mode "2560x1440" \
+            --output $extern1 --mode "3840x2160" --primary --$direction-of $intern \
+            --output $extern2 --mode "1920x1200" --scale 1.5x1.5 --rotate left --$direction-of $extern1
+                    ;;
+    triple)
+        xrandr --output $intern --mode "2560x1440" \
+       	    --output $extern1 --mode "3840x2160" --primary --$direction-of $intern \
+       	    --output $extern2 --mode "1920x1200" --scale 1.5x1.5 --$direction-of $extern1
+                    ;;
+    dual)
+        xrandr --output $intern --mode "2560x1440" \
+       	    --output $extern1 --mode "3840x2160" --primary --$direction-of $intern \
+            --output $extern2 --off
+                    ;;
+    single)
+        xrandr --output $intern --mode "2560x1440" \
+            --output $extern1 --off \
+            --output $extern2 --off
+                    ;;
+esac
+
+mons=`xrandr -q | grep ' connected' | awk '{print $1}'`
+mons_num=`xrandr -q | grep ' connected' | wc -l`
+
+echo "$mons_num avaliable monitor(s): \n$mons "
+
+feh --bg-center ~/wallpapers/$wallpaper 
