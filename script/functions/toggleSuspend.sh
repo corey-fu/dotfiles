@@ -1,15 +1,15 @@
 #!/bin/sh
 
-TOOGLE=$HOME/.toogle
+TOGGLE=$HOME/.toggle
 
 #touch $PATH/echo-0.log
 
 #LOG=$PATH/echo-0.log
 
-if [ ! -e $TOOGLE ]; then #unmasked:disabled
-	touch $TOOGLE
+if [ ! -e $TOGGLE ]; then #unmasked:disabled
+	touch $TOGGLE
 	sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target	
 else
-	rm $TOOGLE #masked:enabled
+	rm $TOGGLE #masked:enabled
 	sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
 fi
