@@ -358,7 +358,7 @@ separator_padding = 0 0
 #-------------------------------------
 # Button 1
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/power.png
+button_icon = /usr/local/share/icons/power.png
 button_text = 
 #button_lclick_command = bl-exit
 button_lclick_command = sh /home/coreyfu/.script/functions/lock.sh
@@ -375,7 +375,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 2
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/text-editor.png
+button_icon = /usr/local/share/icons/text-editor.png
 button_text = 
 button_lclick_command = urxvt -e vim 
 button_rclick_command = 
@@ -391,7 +391,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 3
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/terminal.png
+button_icon = /usr/local/share/icons/terminal.png
 button_text = 
 button_lclick_command = urxvt
 button_rclick_command = 
@@ -407,7 +407,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 4
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/vscode.png
+button_icon = /usr/local/share/icons/vscode.png
 button_text = 
 button_lclick_command = code
 button_rclick_command = 
@@ -423,7 +423,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 5
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/synaptic.png
+button_icon = /usr/local/share/icons/synaptic.png
 button_text = 
 button_lclick_command = synaptic-pkexec
 button_rclick_command = 
@@ -439,7 +439,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 6
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/file-manager.png
+button_icon = /usr/local/share/icons/file-manager.png
 button_text = 
 button_lclick_command = urxvt -e ranger 
 button_rclick_command = 
@@ -455,7 +455,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 7
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/mail.png
+button_icon = /usr/local/share/icons/mail.png
 button_text = 
 button_lclick_command = thunderbird 
 button_rclick_command = google-chrome-stable gmail.com
@@ -471,7 +471,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 8
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/music.png
+button_icon = /usr/local/share/icons/music.png
 button_text = 
 button_lclick_command = audacious 
 button_rclick_command = 
@@ -487,7 +487,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 9
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/gpick.png
+button_icon = /usr/local/share/icons/gpick.png
 button_text = 
 button_lclick_command = gpick
 button_rclick_command = 
@@ -503,7 +503,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 10
 button = new
-button_icon = /home/coreyfu/.config/tint2/icons/firefox.png
+button_icon = /usr/local/share/icons/firefox.png
 button_text = 
 #button_lclick_command = firefox-esr
 button_lclick_command = google-chrome-stable

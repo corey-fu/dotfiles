@@ -5,48 +5,58 @@
 !#include ".Xresources.d/xscreensaver"
 
 ! HiDPI Settings
-#define DPI 164 
-!Xft.dpi: 164
-Xft.dpi: DPI 
-Xft.autohint: 0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintfull
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.rgba: rgb
+!#define DPI 128
+! 2560x1440 !
+!#define DPI 164
+! 3840x2160 for single screen !
+!#define DPI 210 
+! DUAL
+!#define DPI 192 
+!#define DPI 236
+!#define DPI 256
+!Xft.dpi: DPI 
+!Xft.autohint: 0
+!Xft.lcdfilter:  lcddefault
+!Xft.hintstyle:  hintfull
+!Xft.hinting: 1
+!Xft.antialias: 1
+!Xft.rgba: rgb
 
 ! Input Method
-URxvt.InputMethod: gcin
+URxvt.inputMethod: gcin
+URxvt.preeditType: Root
+URxvt.imLocale: zh_TW.UTF-8
 
 ! Font Settings
 
-! URxvt.font: xft:Droid\ Sans\ Mono\ For\ Powerline:size=14,xft:WenQuanYi Micro Hei Mono:regular:size=14:minspace=true,xft:FontAwesome,xft:PowerlineSymbols
-URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12,xft:WenQuanYi Micro Hei Mono:regular:size=12,xft:FontAwesome,xft:PowerlineSymbols,xft:Noto Color Emoji,xft:Symbola
-! URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12,xft:AR PL Uming TW:style=book:size=12,xft:FontAwesome,xft:PowerlineSymbols,xft:Noto Color Emoji,xft:Symbola
+!URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12,xft:WenQuanYi Micro Hei Mono:regular:size=12,xft:FontAwesome,xft:PowerlineSymbols,xft:Noto Color Emoji,xft:Symbola
+URxvt.font: xft:DejaVu Sans Mono for Powerline,xft:WenQuanYi Micro Hei Mono:regular,xft:FontAwesome,xft:PowerlineSymbols,xft:Noto Color Emoji,xft:Symbola
 
 ! Background Settings
 URxvt.letterSpace: 0
 URxvt.depth: 32
 URxvt.background: rgba:0000/0000/0200/c800
-URxvt.transparent: true
+URxvt.transparent: false
 URxvt.shading: 50
 ! Included this so you know how to make your foreground not match the color of your background
 URxvt.foreground: #eeeeee
 
-URxvt.termName:rxvt-unicode-256color
+URxvt.termName: rxvt-unicode-256color
+! URxvt.termName: xterm-256color
 
 ! Set the window size
 !URxvt.geometry: 80x25
-
+URxvt.internalBorder: 10 
 URxvt.loginShell: true
 
 ! turn compile xft on
 ! copy from arch wiki,may increase performance
 URxvt.buffered: true
 
+! Load extensions from perl library
+URxvt.perl-ext: default,matcher,resize-font
 ! set clickable URLs
-URxvt.perl-ext: default,matcher
-URxvt.urlLauncher: /usr/bin/google-chrome
+URxvt.urlLauncher: /usr/bin/chromium
 URxvt.matcher.button: 1
 
 ! Use shift+pageup/down to scroll in screen
@@ -54,16 +64,22 @@ URxvt.scrollBar: False
 URxvt.scrollstyle: next
 URxvt.secondaryScroll: True
 ! Add simple tab function to urxvt
-URxvt.perl-ext-common: tabbed
-URxvt.tabbed.tabbar-fg: 14
-URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 10
-URxvt.tabbed.tab-bg: 8
+! URxvt.perl-ext-common: tabbed
+! URxvt.tabbed.tabbar-fg: 14
+! URxvt.tabbed.tabbar-bg: 0
+! URxvt.tabbed.tab-fg: 10
+! URxvt.tabbed.tab-bg: 8
+
+! To resize fonts on the fly
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
 
 ! Rofi options
-rofi.combi-modi:    window,drun,ssh
+rofi.combi-modi:    window,run,drun,ssh
 rofi.theme:         solarized
-rofi.font:          hack 10
+rofi.font:          DejaVu Sans Mono for Powerline 18
 rofi.modi:          combi
 
 
