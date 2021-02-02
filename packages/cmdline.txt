@@ -1,0 +1,1 @@
+sed -e '/^#/d; /^$/d' base.txt | xargs -- sudo apt install -y
