@@ -31,8 +31,8 @@ $HOME/i3lock-color/build/i3lock \
 --blur 5              \
 --clock               \
 --indicator           \
---timestr="%H:%M:%S"  \
---datestr="%A, %m %Y" \
+--time-str="%H:%M:%S"  \
+--date-str="%A, %m %Y" \
 --keylayout 2         \
 
 # --veriftext="Drinking verification can..."
