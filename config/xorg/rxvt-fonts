@@ -1,0 +1,4 @@
+!URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12,xft:WenQuanYi Micro Hei Mono:regular:size=12,xft:FontAwesome,xft:PowerlineSymbols,xft:Noto Color Emoji,xft:Symbola
+URxvt.font: xft:DejaVu Sans Mono for Powerline,xft:WenQuanYi Micro Hei:regular,xft:FontAwesome,xft:PowerlineSymbols,xft:Noto Color Emoji,xft:Symbola
+!URxvt.font: xft:DejaVu Sans Mono for Powerline,xft::Noto Sans CJK TC:regular,xft:FontAwesome,xft:PowerlineSymbols,xft:Noto Color Emoji,xft:Symbola
+
