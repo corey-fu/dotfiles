@@ -70,14 +70,16 @@ gimp
 evince
 geeqie
 scrot
+flameshot
+peek
 
 # WebBrowser #
 chromium
 chromium-driver
-chromium-l10n 
+chromium-l10n
 
 # Extra #
-telegram-desktop 
+telegram-desktop
 
 # Latex #
 texlive
