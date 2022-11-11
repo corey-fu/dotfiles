@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 rofi -modi run,drun,window \
-       	-show drun -show-icons \
-       	-font "DejaVu Sans Mono for Powerline 18"
+	-show drun -show-icons \
+	-font "DejaVu Sans Mono for Powerline 14"

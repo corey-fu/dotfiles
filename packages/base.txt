@@ -19,6 +19,7 @@ rsync
 g++
 rofi
 ranger
+libnotify-bin
 
 # Network #
 net-tools
@@ -30,7 +31,6 @@ wpasupplicant
 # IME #
 gcin
 gcin-anthy
-libappindicator3-1
 
 # A/V #
 alsa-utils

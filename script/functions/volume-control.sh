@@ -23,7 +23,7 @@ ifMuted() {
 }
 toggleVolume() {
     pactl set-sink-mute $index toggle && ifMuted
-} 
+}
 incVolume() {
     pactl set-sink-volume $index +5% && notify-send -t 1000 "🔉: $(getVolume)"
 }
@@ -32,9 +32,9 @@ decVolume() {
 }
 
 opt=$1
-case $opt in 
-    toggle ) 
-        $(toggleVolume) ;; 
+case $opt in
+    toggle )
+        $(toggleVolume) ;;
     inc )
         $(incVolume) ;;
     dec )

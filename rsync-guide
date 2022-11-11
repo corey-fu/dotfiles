@@ -1,5 +1,0 @@
-## Use rsync to backup files/dirs ##
-
-# Note : use absloute path ! #
-
-$ rysnc --avh /home/coreyfu/.script /home/coreyfu/dotfiles/.script

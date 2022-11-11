@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='scp://jenkins@apc160:22//var/lib/jenkins/workspace/apc160-deploy/boardfarmsite/tasks/'
+let g:netrw_dirhist_3='/home/coreyfu/test'
+let g:netrw_dirhist_2='/home/coreyfu/.config/tmux'
+let g:netrw_dirhist_1='/srv/tftp/debian/pxelinux.cfg'

@@ -2,9 +2,7 @@
 
 ## Install required packages ##
 
-sudo apt install \
-	cargo \
-	libdbus-1-dev 
+sudo apt-get install -y cargo libdbus-1-dev
 
 echo "Break Time"
 sleep 10

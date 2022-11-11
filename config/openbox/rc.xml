@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Prismatic-Night</name>
+    <name>Numix-Clone</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -267,7 +267,7 @@
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -s</command>
+        <command>scrot -s "$HOME/Pictures/captured/Screenshot_%Y-%m-%d_%H.%M.%S.png" -e 'xclip -selection clipboard -t image/png -i $f'</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
@@ -338,7 +338,7 @@
     </keybind>
     <keybind key="A-Return">
       <action name="Execute">
-	<command>urxvt</command>
+        <command>urxvt</command>
       </action>
     </keybind>
     <keybind key="A-Shift-x">
@@ -346,17 +346,17 @@
         <command>/home/coreyfu/.script/functions/lock.sh</command>
       </action>
     </keybind>
-    <keybind key="C-F1">
+    <keybind key="XF86AudioMute">
       <action name="Execute">
         <command>bash /home/coreyfu/.script/functions/volume-control.sh toggle</command>
       </action>
     </keybind>
-    <keybind key="C-F2">
+    <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
         <command>bash /home/coreyfu/.script/functions/volume-control.sh dec</command>
       </action>
     </keybind>
-    <keybind key="C-F3">
+    <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>bash /home/coreyfu/.script/functions/volume-control.sh inc</command>
       </action>
@@ -374,7 +374,7 @@
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot</command>
+        <command>flameshot gui -p /home/coreyfu/Pictures/captured</command>
       </action>
     </keybind>
   </keyboard>

@@ -1,14 +1,5 @@
-#tint2 -c ~/.config/tint2/launchy/launchy.tint2rc &
+# Fix evince
+/usr/libexec/xdg-desktop-portal-gtk &
 
-# notify-send
-dunst&
 # Launch tint2
 tint2 -c ~/.config/tint2/tint2rc &
-# Gcin
-#gcin&
-# Initiate Bluetooth GUI
-blueman-applet&
-# Start 'play-with-mpv' server
-play-with-mpv&
-# Instant Messenger
-telegram-desktop&
