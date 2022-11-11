@@ -20,5 +20,5 @@ sudo cp -r bin/* /usr/local/bin/
 sudo cp -r config/tint2/icons /usr/local/share/
 
 # Install powerline fonts
-git clone https://github.com/powerline/fonts/ ~/fonts
-sh ~/fonts/install.sh
+#git clone https://github.com/powerline/fonts/ ~/fonts
+#sh ~/fonts/install.sh
